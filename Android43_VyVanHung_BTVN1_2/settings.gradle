@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Android43_VyVanHung_BTVN1_2"
