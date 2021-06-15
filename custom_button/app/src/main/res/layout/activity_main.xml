@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    custom shape trong drawable nhu y muon -->
+<!--    chu y muon doi mau button thi -->
+<!--    doi theme trong path values/theme/thems.xml thanh parent="Theme.AppCompat.DayNight.DarkActionBar"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:orientation="vertical"
+        android:layout_margin="13dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textStyle="bold"
+            android:textColor="#F40707"
+            android:gravity="end"
+            android:textSize="20dp"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHANGE PASSWORD"
+            android:textStyle="bold"
+            android:textColor="#F40707"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:padding="5dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To secure your account"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:padding="2dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="please change your password"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:padding="2dp">
+
+        </TextView>
+        <EditText
+            android:id="@+id/oldPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Old password"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button">
+
+        </EditText>
+        <EditText
+            android:id="@+id/newPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New password"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button">
+
+        </EditText>
+        <EditText
+            android:id="@+id/confirmNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm new password"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"
+            >
+
+        </EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button_submit"
+            android:layout_marginBottom="20dp">
+
+        </Button>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
