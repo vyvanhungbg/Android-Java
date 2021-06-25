@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_margin="8dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/vit_quay"
+        ></ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginLeft="6dp">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ding Tea - Kim Giang"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="200.000đ"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="Mua 1 tặng 1"
+                android:layout_margin="3dp"
+                android:background="@drawable/custom_box_voucher"
+                android:gravity="center"
+                android:textColor="@color/red">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="Giảm 70K"
+                android:layout_margin="3dp"
+                android:background="@drawable/custom_box_voucher"
+                android:gravity="center"
+                android:textColor="@color/red">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="3dp"
+                android:layout_height="wrap_content"
+                android:textSize="8dp"
+                android:text="Free Ship"
+                android:layout_margin="3dp"
+                android:background="@drawable/custom_box_voucher"
+                android:gravity="center"
+                android:textColor="@color/red">
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|right"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="top"
+            android:textSize="12dp"
+            android:layout_margin="10dp"
+            android:text="20min-1.8km"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/cong"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:src="@drawable/cong"
+                android:textSize="18dp"
+                android:layout_marginRight="8dp"></ImageView>
+
+            <TextView
+
+                android:id="@+id/soluong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/black"
+                android:text="1"
+                android:textSize="18dp"></TextView>
+
+            <ImageView
+                android:id="@+id/tru"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tru"
+                android:textSize="18dp"
+                android:layout_marginLeft="8dp"
+                >
+            </ImageView>
+        </LinearLayout>
+
+        <RatingBar
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+            android:numStars="5"
+            android:rating="5"
+            ></RatingBar>
+    </LinearLayout>
+</LinearLayout>

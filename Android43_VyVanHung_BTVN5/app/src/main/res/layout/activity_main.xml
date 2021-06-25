@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_acti"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/TitleLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN NOW"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/Username"
+            >
+
+        </TextView>
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_above="@+id/Password"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            >
+        </EditText>
+        <LinearLayout
+            android:id="@+id/recomendation"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/RememberPassword"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/ForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ForgotPassword?"
+                android:textColor="@color/purple_700"
+                android:gravity="left">
+            </TextView>
+            <TextView
+                android:id="@+id/NewUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New User?"
+                android:textColor="@color/purple_700"
+                android:gravity="right">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/RememberPassword"
+            android:layout_below="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+            <CheckBox
+                android:id="@+id/checkboxRemPs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                >
+            </CheckBox>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember Password"
+                android:layout_marginLeft="0dp"
+                android:textColor="#32a852">
+
+            </TextView>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/recomendation"
+            android:layout_marginTop="20dp">
+        </Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>
