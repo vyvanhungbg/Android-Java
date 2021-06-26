@@ -102,12 +102,12 @@
 
             android:gravity="center">
             <ImageView
-                android:id="@+id/cong"
+                android:id="@+id/tru"
                 android:layout_width="10dp"
                 android:layout_height="20dp"
-                android:src="@drawable/cong"
+                android:src="@drawable/tru"
                 android:textSize="18dp"
-                android:layout_marginRight="8dp"></ImageView>
+                android:layout_marginRight="10dp"></ImageView>
 
             <TextView
 
@@ -120,10 +120,11 @@
                 android:textSize="18dp"></TextView>
 
             <ImageView
-                android:id="@+id/tru"
+                android:id="@+id/cong"
                 android:layout_width="10dp"
                 android:layout_height="20dp"
-                android:src="@drawable/tru"
+
+                android:src="@drawable/cong"
                 android:textSize="18dp"
                 android:layout_marginLeft="8dp"
                 >

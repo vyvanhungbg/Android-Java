@@ -13,10 +13,11 @@ import java.util.List;
 
 public class AdapterItems extends RecyclerView.Adapter<AdapterItems.ViewHolder>{
     List<Items> itemsList;
-
     public AdapterItems(List<Items> itemsList) {
         this.itemsList = itemsList;
     }
+
+
 
     @Override
     public ViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
@@ -34,7 +35,25 @@ public class AdapterItems extends RecyclerView.Adapter<AdapterItems.ViewHolder>{
         holder.tvTime.setText(items.getTime());
         holder.tvSoLuong.setText(String.valueOf(items.getAmount()));
 
+        holder.cong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                items.setAmount(items.getAmount()+1);
+                holder.tvSoLuong.setText(String.valueOf(items.getAmount()));
+            }
+        });
 
+        holder.tru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int amount = items.getAmount();
+                if(amount>0){
+                    items.setAmount(items.getAmount()-1);
+                }
+
+                holder.tvSoLuong.setText(String.valueOf(items.getAmount()));
+            }
+        });
 
     }
 

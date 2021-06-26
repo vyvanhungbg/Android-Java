@@ -10,28 +10,28 @@
 
 
 
-    <!--   <LinearLayout-->
-    <!--       android:layout_width="match_parent"-->
-    <!--       android:layout_height="50dp"-->
-    <!--       android:weightSum="6"-->
-    <!--       android:layout_margin="10dp">-->
-    <!--       <EditText-->
-    <!--           android:layout_width="0dp"-->
-    <!--           android:layout_height="wrap_content"-->
-    <!--           android:hint="Tìm kiếm"-->
-    <!--           android:layout_weight="5">-->
-    <!--       </EditText>-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:weightSum="6"
+           android:layout_margin="10dp">
+           <EditText
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:hint="Tìm kiếm"
+               android:layout_weight="5">
+           </EditText>
 
-    <!--       <ImageView-->
-    <!--           android:id="@+id/giohang"-->
-    <!--           android:layout_width="0dp"-->
-    <!--           android:layout_height="match_parent"-->
-    <!--           android:layout_weight="1"-->
-    <!--           android:src="@drawable/giohang"-->
-    <!--           android:layout_margin="6dp">-->
+           <ImageView
+               android:id="@+id/giohang"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:src="@drawable/ic_baseline_shopping_cart_24"
+               android:layout_margin="6dp">
 
-    <!--       </ImageView>-->
-    <!--   </LinearLayout>-->
+           </ImageView>
+       </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
 
