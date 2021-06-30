@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragmentMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:id="@+id/vControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="ADD"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:layout_height="wrap_content">
+        </Button>
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_margin="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="EXIT"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
