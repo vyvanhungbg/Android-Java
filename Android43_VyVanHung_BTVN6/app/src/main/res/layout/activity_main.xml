@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+   >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_margin="16dp">
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:hint="Title"
+           android:padding="10dp"
+           android:background="@drawable/custom_box_edit_text"
+           android:textColor="@color/black"
+           android:layout_marginBottom="18dp"
+           ></EditText>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:background="@drawable/custom_box_edit_text"
+           android:hint="Descreiption"
+           android:padding="10dp"
+           android:textColor="@color/black"
+           ></EditText>
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Remind me at : "
+           android:layout_margin="10dp"
+           android:textColor="@color/red"></TextView>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginBottom="20dp"
+           android:weightSum="2">
+           <TextView
+               android:id="@+id/tvTime"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="14:20"
+               android:gravity="center"
+               android:textColor="@color/red"
+               android:textSize="30dp"></TextView>
+
+
+           <TextView
+               android:id="@+id/tvDate"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:text="01/07/2021"
+               android:gravity="center"
+               android:textColor="@color/red"
+               android:textSize="25dp"></TextView>
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_marginBottom="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Type: "
+               android:textSize="18dp">
+           </TextView>
+           <Spinner
+               android:id="@+id/id_spinnerType"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content">
+           </Spinner>
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_marginBottom="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Tags: "
+               android:textSize="18dp">
+           </TextView>
+           <TextView
+               android:id="@+id/tvTags"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:text="Android, VTC, FPT, Game "
+               android:textSize="18dp">
+           </TextView>
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_marginBottom="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Weeks: "
+               android:textSize="18dp">
+           </TextView>
+           <TextView
+               android:id="@+id/tvWeeks"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:text="Mon, Thu, Sat "
+               android:textSize="18dp">
+           </TextView>
+       </LinearLayout>
+
+       <TextView
+           android:id="@+id/tvTune"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@color/red"
+           android:textSize="18dp"
+           android:textColor="@color/white"
+           android:paddingLeft="20dp"
+           android:paddingBottom="10dp"
+           android:paddingTop="10dp"
+           android:paddingRight="20dp"
+           android:text="Tune">
+       </TextView>
+   </LinearLayout>
+</layout>
